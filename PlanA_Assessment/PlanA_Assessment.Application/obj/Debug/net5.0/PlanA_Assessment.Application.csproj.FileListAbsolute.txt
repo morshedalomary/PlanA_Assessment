@@ -1,0 +1,15 @@
+S:\PlanA_Assessment\PlanA_Assessment.Application\bin\Debug\net5.0\PlanA_Assessment.Domain.dll
+S:\PlanA_Assessment\PlanA_Assessment.Application\obj\Debug\net5.0\PlanA_Assessment.Application.csprojAssemblyReference.cache
+S:\PlanA_Assessment\PlanA_Assessment.Application\obj\Debug\net5.0\PlanA_Assessment.Application.GeneratedMSBuildEditorConfig.editorconfig
+S:\PlanA_Assessment\PlanA_Assessment.Application\obj\Debug\net5.0\PlanA_Assessment.Application.AssemblyInfoInputs.cache
+S:\PlanA_Assessment\PlanA_Assessment.Application\obj\Debug\net5.0\PlanA_Assessment.Application.AssemblyInfo.cs
+S:\PlanA_Assessment\PlanA_Assessment.Application\bin\Debug\net5.0\PlanA_Assessment.Application.deps.json
+S:\PlanA_Assessment\PlanA_Assessment.Application\bin\Debug\net5.0\PlanA_Assessment.Application.dll
+S:\PlanA_Assessment\PlanA_Assessment.Application\bin\Debug\net5.0\ref\PlanA_Assessment.Application.dll
+S:\PlanA_Assessment\PlanA_Assessment.Application\bin\Debug\net5.0\PlanA_Assessment.Application.pdb
+S:\PlanA_Assessment\PlanA_Assessment.Application\bin\Debug\net5.0\PlanA_Assessment.Domain.pdb
+S:\PlanA_Assessment\PlanA_Assessment.Application\obj\Debug\net5.0\PlanA_Assessment.Application.csproj.CoreCompileInputs.cache
+S:\PlanA_Assessment\PlanA_Assessment.Application\obj\Debug\net5.0\PlanA_Assessment.Application.csproj.CopyComplete
+S:\PlanA_Assessment\PlanA_Assessment.Application\obj\Debug\net5.0\PlanA_Assessment.Application.dll
+S:\PlanA_Assessment\PlanA_Assessment.Application\obj\Debug\net5.0\ref\PlanA_Assessment.Application.dll
+S:\PlanA_Assessment\PlanA_Assessment.Application\obj\Debug\net5.0\PlanA_Assessment.Application.pdb

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "PlanA_Assessment.Domain/1.0.0": {
+        "runtime": {
+          "PlanA_Assessment.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PlanA_Assessment.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

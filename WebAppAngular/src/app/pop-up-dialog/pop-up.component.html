@@ -1,0 +1,25 @@
+<div class="pop-up">
+  <h1 mat-dialog-title>{{data.question}}</h1>
+  <div mat-dialog-content>
+    <p></p>
+  </div>
+
+
+
+  <div class="operation_btn_group dir">
+    <button *ngIf="data.ok" (click)="Save()" class="btn btn-form  btn-sales-width" style="background-color : green !important">
+
+      <span> OK </span>
+    </button>
+    <button *ngIf="data.ok" (click)="Cancel()" class="btn btn-form btn-sales-width" style="background-color: lightgrey !important">
+
+      <span>  NO</span>
+    </button>
+    <button *ngIf="!data.ok" (click)="Cancel()" class="btn btn-form btn-sales-width" style="background-color: lightgrey !important">
+
+      <span class="btn-name">OK</span>
+    </button>
+  </div>
+
+
+</div>

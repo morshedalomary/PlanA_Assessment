@@ -1,0 +1,96 @@
+<div class="custom-div">
+  <mat-card>
+    <div class="row">
+
+
+      <div class="col-6">
+        <div class="main-ui-filter-search">
+          <input type="text"  placeholder="Search" name="Search-Filter" class="main-ui-filter-search-filter"
+                 (keyup)="onKeySearch()" [(ngModel)] ="searchText">
+
+        </div>
+      </div>
+      <div class="col-6">
+        <button class="button" (click)="addProduct() ">
+          Add Product
+        </button>
+      </div>
+
+    </div>
+  </mat-card>
+  <mat-card>
+    <mat-table [dataSource]="dataSource" class="mat-elevation-z8" matSort>
+
+
+      <ng-container matColumnDef="Image">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Image </mat-header-cell>
+        <mat-cell *matCellDef="let element; let i=index;"> <img width="300" height="150" src="data:image/jpeg;base64,{{element.image}}"></mat-cell>
+      </ng-container>
+
+
+      <ng-container matColumnDef="Title">
+        <mat-header-cell *cdkHeaderCellDef mat-sort-header>Title</mat-header-cell>
+        <mat-cell *cdkCellDef="let element; let i = index;"> {{element.title}}</mat-cell>
+
+      </ng-container>
+
+
+      <ng-container matColumnDef="Description">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Description </mat-header-cell>
+        <mat-cell *matCellDef="let element; let i=index;"> {{element.description}} </mat-cell>
+      </ng-container>
+
+
+      <ng-container matColumnDef="Price">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Price </mat-header-cell>
+        <mat-cell *matCellDef="let element; let i=index;"> {{element.price}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="Number_of_Views">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Number of Views </mat-header-cell>
+        <mat-cell *matCellDef="let element; let i=index;"> {{element.number_of_Views}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="Dietary_flags">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Dietary flags </mat-header-cell>
+        <mat-cell *matCellDef="let element; let i=index;"> {{element.dietary_flags}} </mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="operation">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Update or Delete </mat-header-cell>
+        <mat-cell *matCellDef="let element; let i=index;">
+          <button (click)="updateProduct(element)" type="button" class="btn btn-light mr-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+              <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z" />
+            </svg>
+          </button>
+          <button (click)="deleteProduct(element)" type="button" class="btn btn-light mr-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+              <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z" />
+            </svg>
+          </button>
+
+        </mat-cell>
+      </ng-container>
+      <ng-container cdkColumnDef="numberProduct">
+        <mat-header-cell *cdkHeaderCellDef></mat-header-cell>
+        <mat-cell *cdkCellDef="let element; let i = index;"></mat-cell>
+        <mat-footer-cell *cdkFooterCellDef>
+          <span>Number of Product: </span>
+          <span>{{numberProduct}}</span>
+        </mat-footer-cell>
+      </ng-container>
+      <mat-header-row style="background: lightgrey" *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+      <mat-footer-row *cdkFooterRowDef="['numberProduct']" class="report-footer-row report"></mat-footer-row>
+
+    </mat-table>
+    <mat-paginator [pageSizeOptions]="[20,5,10, 50, 100]" showFirstLastButtons></mat-paginator>
+    <div>
+
+      <button class="btn  btn-form" style="background-color: lightgrey;" (click)="back()">
+        <span class="btn-name">Back</span>
+      </button>
+    </div>
+  </mat-card>
+
+</div>

@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 80%;
+  justify-content: center;
+  justify-items: center;
+  margin: auto;
+  text-align: center;
+}
+
+  ul li {
+    border: 1px solid #ddd;
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+    position: relative;
+    width: 80%;
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+    text-align: center;
+  }
+
+    ul li:hover {
+      background-color: #eee;
+    }

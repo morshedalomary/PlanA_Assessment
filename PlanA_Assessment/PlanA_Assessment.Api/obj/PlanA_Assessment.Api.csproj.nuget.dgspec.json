@@ -1,0 +1,283 @@
+{
+  "format": 1,
+  "restore": {
+    "S:\\PlanA_Assessment\\PlanA_Assessment\\PlanA_Assessment.Api\\PlanA_Assessment.Api.csproj": {}
+  },
+  "projects": {
+    "S:\\PlanA_Assessment\\PlanA_Assessment\\PlanA_Assessment.Api\\PlanA_Assessment.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "S:\\PlanA_Assessment\\PlanA_Assessment\\PlanA_Assessment.Api\\PlanA_Assessment.Api.csproj",
+        "projectName": "PlanA_Assessment.Api",
+        "projectPath": "S:\\PlanA_Assessment\\PlanA_Assessment\\PlanA_Assessment.Api\\PlanA_Assessment.Api.csproj",
+        "packagesPath": "C:\\Users\\Morshed\\.nuget\\packages\\",
+        "outputPath": "S:\\PlanA_Assessment\\PlanA_Assessment\\PlanA_Assessment.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Morshed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "S:\\PlanA_Assessment\\PlanA_Assessment\\PlanA_Assessment.Application\\PlanA_Assessment.Application.csproj": {
+                "projectPath": "S:\\PlanA_Assessment\\PlanA_Assessment\\PlanA_Assessment.Application\\PlanA_Assessment.Application.csproj"
+              },
+              "S:\\PlanA_Assessment\\PlanA_Assessment\\PlanA_Assessment.Presistence\\PlanA_Assessment.Presistence.csproj": {
+                "projectPath": "S:\\PlanA_Assessment\\PlanA_Assessment\\PlanA_Assessment.Presistence\\PlanA_Assessment.Presistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0-preview.1.21102.2, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "S:\\PlanA_Assessment\\PlanA_Assessment\\PlanA_Assessment.Application\\PlanA_Assessment.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "S:\\PlanA_Assessment\\PlanA_Assessment\\PlanA_Assessment.Application\\PlanA_Assessment.Application.csproj",
+        "projectName": "PlanA_Assessment.Application",
+        "projectPath": "S:\\PlanA_Assessment\\PlanA_Assessment\\PlanA_Assessment.Application\\PlanA_Assessment.Application.csproj",
+        "packagesPath": "C:\\Users\\Morshed\\.nuget\\packages\\",
+        "outputPath": "S:\\PlanA_Assessment\\PlanA_Assessment\\PlanA_Assessment.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Morshed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "S:\\PlanA_Assessment\\PlanA_Assessment\\PlanA_Assessment.Domain\\PlanA_Assessment.Domain.csproj": {
+                "projectPath": "S:\\PlanA_Assessment\\PlanA_Assessment\\PlanA_Assessment.Domain\\PlanA_Assessment.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.0.2, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "S:\\PlanA_Assessment\\PlanA_Assessment\\PlanA_Assessment.Domain\\PlanA_Assessment.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "S:\\PlanA_Assessment\\PlanA_Assessment\\PlanA_Assessment.Domain\\PlanA_Assessment.Domain.csproj",
+        "projectName": "PlanA_Assessment.Domain",
+        "projectPath": "S:\\PlanA_Assessment\\PlanA_Assessment\\PlanA_Assessment.Domain\\PlanA_Assessment.Domain.csproj",
+        "packagesPath": "C:\\Users\\Morshed\\.nuget\\packages\\",
+        "outputPath": "S:\\PlanA_Assessment\\PlanA_Assessment\\PlanA_Assessment.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Morshed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "S:\\PlanA_Assessment\\PlanA_Assessment\\PlanA_Assessment.Presistence\\PlanA_Assessment.Presistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "S:\\PlanA_Assessment\\PlanA_Assessment\\PlanA_Assessment.Presistence\\PlanA_Assessment.Presistence.csproj",
+        "projectName": "PlanA_Assessment.Presistence",
+        "projectPath": "S:\\PlanA_Assessment\\PlanA_Assessment\\PlanA_Assessment.Presistence\\PlanA_Assessment.Presistence.csproj",
+        "packagesPath": "C:\\Users\\Morshed\\.nuget\\packages\\",
+        "outputPath": "S:\\PlanA_Assessment\\PlanA_Assessment\\PlanA_Assessment.Presistence\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Morshed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "S:\\PlanA_Assessment\\PlanA_Assessment\\PlanA_Assessment.Application\\PlanA_Assessment.Application.csproj": {
+                "projectPath": "S:\\PlanA_Assessment\\PlanA_Assessment\\PlanA_Assessment.Application\\PlanA_Assessment.Application.csproj"
+              },
+              "S:\\PlanA_Assessment\\PlanA_Assessment\\PlanA_Assessment.Domain\\PlanA_Assessment.Domain.csproj": {
+                "projectPath": "S:\\PlanA_Assessment\\PlanA_Assessment\\PlanA_Assessment.Domain\\PlanA_Assessment.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.0-preview.1.21102.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0-preview.1.21102.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

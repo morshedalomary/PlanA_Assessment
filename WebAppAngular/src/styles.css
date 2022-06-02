@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.operation_btn_group {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80% !important;
+  text-align: center !important;
+  margin-bottom: 3% !important;
+  margin-top: 12px;
+}
+.dir {
+  direction: ltr !important;
+}
+mat-row, mat-header-row, mat-footer-row {
+  border-bottom-width : 5px !important;
+}

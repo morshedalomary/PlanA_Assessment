@@ -1,0 +1,29 @@
+
+<mat-card>
+
+  <form [formGroup]="firstFormGroup">
+    <div class="row">
+      <mat-form-field class="col-12 col-md-12">
+        <input matInput placeholder="Name" formControlName="name" required type="text" name="name">
+      </mat-form-field>
+
+    </div>
+
+
+
+    <div>
+      <button class="btn  btn-form" style="background-color: aqua;" type="submit" (click)="onSubmit()">
+
+        <span class="btn-name">Save</span>
+      </button>
+      <button class="btn  btn-form" style="background-color: lightgrey;" (click)="back()">
+        <span class="btn-name">Back</span>
+      </button>
+    </div>
+  </form>
+
+
+
+</mat-card>
+
+

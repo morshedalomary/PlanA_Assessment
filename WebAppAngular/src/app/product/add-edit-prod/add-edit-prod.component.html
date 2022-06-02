@@ -1,0 +1,68 @@
+
+<mat-card>
+
+  <form [formGroup]="firstFormGroup">
+    <div class="row">
+      <mat-form-field class="col-6 col-md-5">
+        <input matInput placeholder="Title" formControlName="title" required type="text" name="title">
+      </mat-form-field>
+      <mat-form-field class="col-6 col-md-5">
+        <input matInput placeholder="Description" formControlName="description" type="text" name="description">
+      </mat-form-field>
+    </div>
+    <div class="row">
+      <mat-form-field class="col-6 col-md-5">
+        <input matInput placeholder="Price" formControlName="price" type="number" name="number" autocomplete="on">
+      </mat-form-field>
+      <mat-form-field class="col-6 col-md-5">
+       
+          <mat-label>Dietary flags</mat-label>
+          <mat-select [(ngModel)]="dietarySelected"  formControlName="dietary_flags" name="dietary_flags">
+            <mat-option *ngFor="let dietary of dietarys" [value]="dietary.value">{{dietary.viewValue}}</mat-option>
+
+          </mat-select>
+     
+      </mat-form-field>
+    </div>
+    <div class="row">
+      <mat-form-field class="col-6 col-md-5">
+        <input matInput placeholder="Number of Views" formControlName="number_of_Views" type="number" name="number_of_Views" autocomplete="on">
+      </mat-form-field>
+      <mat-form-field appearance="fill" class="col-6 col-md-5">
+        <mat-label>Categorys</mat-label>
+        <mat-select [(ngModel)]="selected" formControlName="categoryID"  name="categoryID">
+          <mat-option *ngFor="let category of categorys" [value]="category.id">{{category.name}}</mat-option>
+
+        </mat-select>
+      </mat-form-field>
+
+    </div>
+
+    <div class="row">
+      <div class="col-6 col-md-5">
+        <input type="file" class="form-control" accept="image/*" (change)="handleFileInput($event)" name="file">
+
+
+      </div>
+      <div class="col-6 col-md-5">
+        <img src="{{imageSrc}}" height="150" width="200">
+
+      </div>
+
+    </div>
+    <div >
+      <button class="btn  btn-form" style="background-color: aqua;" type="submit" (click)="onSubmit()">
+
+        <span class="btn-name">Save</span>
+      </button>
+      <button class="btn  btn-form" style="background-color: lightgrey;" (click)="back()">
+        <span class="btn-name">Back</span>
+      </button>
+      </div>
+  </form>
+ 
+
+
+</mat-card>
+
+
